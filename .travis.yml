@@ -4,9 +4,8 @@ compiler:
   - gcc
 
 before_script:
-  - mkdir build
-  - cd build
-  - cmake ..
+  - ./autogen.sh
+  - ./configure
 
 script: make && make test
 notifications:
